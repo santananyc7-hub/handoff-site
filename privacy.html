@@ -17,10 +17,10 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective September 11, 2026</p>
+  <p class="meta">Effective September 12, 2026</p>
 
   <div class="card">
-    <p><strong>The short version:</strong> Handoff stores your family's schedule on your own device. We don't collect it, we can't see it, and we don't share it with anyone.</p>
+    <p><strong>The short version:</strong> Your family's plan is stored in a private cloud database so everyone in your household sees the same thing. Only people who have your family's invite code can access it. There are no accounts, no ads, and no analytics.</p>
   </div>
 
   <h2>Who we are</h2>
@@ -32,13 +32,16 @@
     <li>your family name and the names, roles and colors of family members (including children)</li>
     <li>calendar events, handoffs, tasks, availability, notes and settings</li>
   </ul>
-  <p>All of this is saved <strong>only on the device you are using</strong> — in your browser's local storage (also when the app is installed to your home screen). It is not transmitted to us or to any server we operate.</p>
+  <p>When you set up or join a family, this information is stored in <strong>Google Cloud Firestore</strong> (part of Firebase), in Google's United States data centres, so that every member of your family sees the same plan and changes appear on each other's devices immediately. A copy is also kept on each device so the app works offline. The demo family, and any family that has not started syncing, stays only on your device.</p>
+
+  <h2>How access works</h2>
+  <p>Each device is signed in anonymously — a random identifier with no name, email or password attached. A family has a private invite code (for example <code>MAPLE-7K2Q</code>). Entering the code adds that device to the family; from then on, only devices in the family can read or change its plan. Security rules enforced by Firebase make this restriction; we have no admin dashboard that browses family data. Treat the code like a house key and share it only with your household.</p>
 
   <h2>Information we collect</h2>
-  <p><strong>None.</strong> Handoff has no accounts, no sign-in, no analytics, no advertising, and no crash reporting. We do not receive your name, email address, location, contacts, or any of the content you enter.</p>
+  <p>Beyond the plan itself, <strong>nothing</strong>. Handoff has no user accounts, no analytics, no advertising, and no crash reporting. We do not ask for your name, email address, location, or contacts. Google, as the hosting provider, processes the data on our behalf under the <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy terms</a>.</p>
 
   <h2>Network requests</h2>
-  <p>The app loads its typefaces from Google Fonts when a connection is available. That request reveals your IP address to Google, as any web request does; it carries none of your family data. Google's handling of that request is described in the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. No other network requests are made.</p>
+  <p>The app talks to Firebase to sync your family's plan, and loads its typefaces from Google Fonts. Both reveal your IP address to Google, as any web request does. No other services are contacted.</p>
 
   <h2>Children</h2>
   <p>Handoff is designed for parents and caregivers. Children's names that you enter are stored on your device alongside the rest of your family's plan and are never sent to us. We do not knowingly collect personal information from children.</p>
@@ -47,10 +50,10 @@
   <p>When you use <em>Share brief</em>, the app hands the text of your weekly brief to your device's share sheet (Messages, Mail, etc.). What happens next is governed by the app you choose to share with. Handoff itself does not send the brief anywhere.</p>
 
   <h2>Deleting your data</h2>
-  <p>Open <strong>Settings → Erase all data</strong> in the app, or clear the site's data in your browser. Because nothing is stored outside your device, there is nothing for us to delete on our side.</p>
+  <p>To remove a device, open <strong>Settings → Leave family on this device</strong>. To delete a family's data entirely, contact the person who shared the app with you, who can request deletion; we will remove it from the cloud database. Because nothing is stored outside your device, there is nothing for us to delete on our side.</p>
 
   <h2>Future features</h2>
-  <p>If we add optional features that require sending data off your device — such as syncing between family members, calendar connections, or notifications — they will be opt-in, clearly explained inside the app, and this policy will be updated before they launch.</p>
+  <p>If we add optional features such as calendar connections or notifications, they will be opt-in, clearly explained inside the app, and this policy will be updated before they launch.</p>
 
   <h2>Not medical or emergency advice</h2>
   <p>Handoff is a coordination tool. It is not a replacement for professional medical advice or emergency services.</p>
