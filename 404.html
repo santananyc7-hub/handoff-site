@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Handoff</title>
+  <script>
+    // Single-page-app fallback for GitHub Pages: deep links under /handoff-site/app/
+    // are bounced to the app with the intended path, which the app restores.
+    (function () {
+      var base = '/handoff-site/app/';
+      var p = location.pathname;
+      if (p.indexOf(base) === 0 && p !== base) {
+        var rest = p.slice(base.length - 1) + location.search + location.hash;
+        location.replace(base + '?redirect=' + encodeURIComponent(rest));
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="/handoff-site/style.css">
+</head>
+<body>
+<main>
+  <h1>Page not found</h1>
+  <p>That link doesn't go anywhere. <a href="/handoff-site/">Back to Handoff</a> · <a href="/handoff-site/app/">Open the app</a></p>
+</main>
+</body>
+</html>
