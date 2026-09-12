@@ -1,27 +1,24 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Handoff</title>
-  <script>
-    // Single-page-app fallback for GitHub Pages: deep links under /handoff-site/app/
-    // are bounced to the app with the intended path, which the app restores.
-    (function () {
-      var base = '/handoff-site/app/';
-      var p = location.pathname;
-      if (p.indexOf(base) === 0 && p !== base) {
-        var rest = p.slice(base.length - 1) + location.search + location.hash;
-        location.replace(base + '?redirect=' + encodeURIComponent(rest));
-      }
-    })();
-  </script>
-  <link rel="stylesheet" href="/handoff-site/style.css">
-</head>
-<body>
-<main>
-  <h1>Page not found</h1>
-  <p>That link doesn't go anywhere. <a href="/handoff-site/">Back to Handoff</a> · <a href="/handoff-site/app/">Open the app</a></p>
-</main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/handoff-site/favicon.svg" />
+    <link rel="apple-touch-icon" href="/handoff-site/icons/icon-180.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Handoff" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#FBF7F0" />
+    <meta name="description" content="Handoff — everyone knows what's happening, who's responsible, and what needs to happen next." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+    <title>Handoff — Family coordination</title>
+    <script type="module" crossorigin src="/handoff-site/assets/index-EP5w4jXZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/handoff-site/assets/index-DdzgqFM_.css">
+  <link rel="manifest" href="/handoff-site/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/handoff-site/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
